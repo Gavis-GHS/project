@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
         if($('.form-username').val() != '' && $('.form-password').val() != '') {
             fetch('http://8.135.53.8:8080/loginJson/',{
                 method: 'POST',
-                mode: 'cors',
+                mode: 'cors', // 是否支持跨域,可选择cors、same-origin和no-cors
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8'
                  },
@@ -45,7 +45,7 @@ jQuery(document).ready(function() {
                     } else {
                         $('.form-username, .form-password').val('')
                         $('.form-username, .form-password').removeClass('input-error');
-                        window.location = 'main.html?name=' + data.name;
+                        window.location = 'main.html?name=' + data.name; // 页面跳转
                     }
                 })
             })
