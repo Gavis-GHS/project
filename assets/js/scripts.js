@@ -40,16 +40,18 @@ jQuery(document).ready(function() {
             }).then(res => {
                 res.json().then(data => {
                     if(data.status != 1) {
+                        window.alert('账号或密码错误');
                         $('.form-username, .form-password').val('')
                         $('.form-username, .form-password').addClass('input-error');
                     } else {
                         $('.form-username, .form-password').val('')
                         $('.form-username, .form-password').removeClass('input-error');
-                        window.location = 'main.html?name=' + data.name; // 页面跳转
+                        window.location = 'main.html?name=' + data.name + '&id=' + data.id; // 页面跳转
                     }
                 })
             })
         } else {
+            window.alert('账号密码不能为空');
             $('.form-username, .form-password').addClass('input-error');
         }
     })
