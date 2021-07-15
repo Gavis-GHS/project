@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
 		    <link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
-      
+        <title>修改密码</title>
     </head>
     <body>
-      <div style="margin: 10% auto;width: 30%;">
+
+      <!-- <div style="margin: 10% auto;width: 30%;">
         <form>
           <div class="form-group">
             <div class="input-group">
@@ -24,42 +25,52 @@
               <input type="password" class="form-control" placeholder="新密码..." aria-describedby="basic-addon1">
             </div>
           </div>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">确认新密码：</span>
-              <input type="password" class="form-control" placeholder="确认新密码..." aria-describedby="basic-addon1">
-            </div>
-          </div>
-          <h6 style="color: aqua;">密保问题: <span class="badge badge-secondary">New</span></h6>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">你父亲的名字：</span>
-              <input type="text" class="form-control" placeholder="你父亲的名字..." aria-describedby="basic-addon1">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">你最好的朋友名字：</span>
-              <input type="text" class="form-control" placeholder="你最好的朋友名字..." aria-describedby="basic-addon1">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <span class="input-group-addon" id="basic-addon1">你的生日：</span>
-              <input type="date" class="form-control" placeholder="你的生日..." aria-describedby="basic-addon1">
-            </div>
-          </div>
           <button type="submit" class="btn btn-primary">确认更改</button>
-        </form>
-  
-  
-      </div>
+        </form>  
+      </div> -->
+
+      <div class="top-content" style="margin-top: 70px;">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1><strong>修改密码</strong></h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 form-box">
+                      <div class="form-bottom">
+                      <form role="form" action="" method="post" class="login-form">
+                          <div class="form-group">
+                            <label class="sr-only" for="form-username">Username</label>
+                            <input type="text" name="form-username" placeholder="用户名" class="form-username form-control">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-userid">Userid</label>
+                            <input type="text" name="form-userid" placeholder="账号" class="form-userid form-control">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-password">Password</label>
+                            <input type="password" name="form-password" placeholder="密码" class="form-password form-control">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-cpassword">cPassword</label>
+                            <input type="password" name="form-cpassword" placeholder="确认密码" class="form-cpassword form-control">
+                          </div>
+                          <button type="submit" class="btn">修 改</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>  
+    </div>
 
       <!--javascript -->
       <script src="assets/js/jquery-1.11.1.min.js"></script>
       <script src="assets/bootstrap/js/bootstrap.min.js"></script>
       <script src="assets/js/jquery.backstretch.min.js"></script>
-      <script src="assets/js/scripts.js"></script>
+      <script src="assets/js/findPsw.js"></script>
     </body>
 
 </html>
